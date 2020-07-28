@@ -9,8 +9,8 @@ nav {
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
-  background-color: rgb(80, 94, 141);
-  font-family: "Poppins", sans-serif;
+  background-color: olivedrab;
+  font-family: fantasy;
 }
 .logo {
   color: rgb(226, 226, 226);
@@ -78,7 +78,7 @@ nav {
     right: 0px;
     height: 92vh;
     top: 8vh;
-    background-color: rgb(80, 94, 141);       
+    background-color: olivedrab;       
     display: flex;
     flex-direction: column;
     align-items: center;
