@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <title>notes</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+
+      .all {
+        margin-top: 40px;
+        margin-left: 35px;
+        margin-right: 35px;
+        /* margin-bottom: 40px; */
+      }
+
+      .heading {
+        margin-left: 40;
+        margin-right: 40;
+        text-align: center;
+      }
+
+      .date {
+        font-family: initial;
+        color: black;
+        background-color: rgb(120, 211, 120);
+        width: 100%;
+        padding: 18px;
+        border-radius: 5px;
+        margin: auto;
+        margin-top: 20px;
+
+        transition: 0.4s;
+        display: inline-block;
+      }
+
+      .days{
+          text-align: center;
+      }
+
+      .notes {
+        padding: 0px 18px;
+        margin-top: 10px;
+        background-color: darkgray;
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+      }
+
+      @media screen and (max-width: 768px) {
+        .all {
+          width: 100%;
+          margin-right: 10;
+          margin-left: 10px;
+          padding: 0px;
+        }
+
+       
+      }
+
+       .active,
+        .date:hover{
+            background-color: rgb(219, 147, 23);
+        }
+
+       
+        .date::after{
+            content:"\1F447";  
+         padding-left: 90%
+
+        }
+
+         .active::after{
+            content: "\261D";
+        }
+
+    </style>
+  </head>
+  <body>
+      <nav>
+      <div class="logo">
+        <img class="image" src="./Images/first logo.png" alt="" />
+        <h4>GITARPICKS</h4>
+      </div>
+
+      <ul class="nav-links">
+        <li>
+          <a href="./index.html">HOME</a>
+        </li>
+        <li>
+          <a href="#">ABOUT</a>
+        </li>
+        <li>
+          <a href="#">PROJECTS</a>
+        </li>
+        <li>
+          <a href="./assignment.html">ASSIGNMENTS</a>
+        </li>
+        <li>
+          <a href="./notes.html">LESSONS</a>
+        </li>
+        
+      </ul>
+
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+     <script src="./app.js"></script>
+
+    <div class="all">
+      <div class="heading">
+        <h2></h2>
+      &#128218  GTL TRAINING SESSIONS &#128187
+      </div>
+      <button class="date">
+        day 1
+        <br />
+       <div class="days"> Monday 20th July </div>
+      </button>
+
+      <div class="notes">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          sequi accusantium nam nulla libero assumenda tempora eos quo,
+          distinctio molestias, dolore id fuga sunt maiores neque autem?
+          Dolores, voluptatibus quia.
+        </p>
+      </div>
+      <button class="date">
+        day 1
+        <br />
+        <div class="days">Tuesday 21st July</div>
+      </button>
+      <div class="notes">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas,
+          harum similique. Modi repudiandae deserunt, facere nesciunt placeat
+          eveniet, alias enim a impedit numquam nihil dolorem consequatur minus
+          ullam veniam natus!
+        </p>
+      </div>
+
+      <button class="date">
+        day 1
+        <br />
+      <div class="days"></d  Wednesday 22nd July>
+      </button>
+      <div class="notes">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste
+          voluptas voluptatem aperiam ipsum provident magnam, quae ut cupiditate
+          ad, culpa quisquam impedit excepturi harum! Dolores totam nemo omnis
+          nostrum reiciendis.
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var acc = document.getElementsByClassName("date");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

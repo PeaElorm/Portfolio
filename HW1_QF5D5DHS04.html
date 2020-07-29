@@ -1,0 +1,103 @@
+<!DOCTYPE html> 
+ <html lang="en"> 
+   <head> 
+     <meta charset="UTF-8" /> 
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+     <title>Assignment1</title> 
+     <style> 
+       input[type="text"], 
+       select { 
+         width: 85%; 
+         padding: 12px 20px; 
+         margin: 8px 0; 
+         display: inline-block; 
+         border-radius: 4px; 
+         border-color: white; 
+         box-sizing: border-box; 
+         font-size: 20px; 
+       } 
+  
+       input[type="submit"] { 
+         width: 90px; 
+         height: 40px; 
+         background-color: green; 
+         color: white; 
+         margin: 8px 0; 
+         border: none; 
+         border-radius: 4px; 
+         cursor: pointer; 
+       } 
+  
+       input[type="submit"]:hover { 
+         background-color: yellow; 
+         width: 90px; 
+       } 
+  
+       .form { 
+         border-radius: 5px; 
+         background-color: #f4f4f4; 
+         width: 50%; 
+         padding: 20px; 
+         margin: 5% 20%; 
+       } 
+       label { 
+         font-size: 30px; 
+       } 
+       textarea { 
+         width: 90%; 
+       } 
+       .all { 
+         margin: 0px 0px 0px 50px; 
+         padding: 0; 
+       } 
+       /* MOBILE */ 
+       @media screen and (max-width: 768px) { 
+         /* body { 
+           display: none; 
+         } */ 
+         .form { 
+           width: 300px; 
+         } 
+         .all { 
+           margin: 0px; 
+           padding: 0px; 
+         } 
+       } 
+     </style> 
+   </head> 
+   <body> 
+     <div class="form"> 
+       <form action=""> 
+         <div class="all"> 
+           <label for="firstName">First Name</label> 
+           <br /> 
+           <input placeholder="Your First Name" type="text" /> 
+           <br /> 
+           <label for="lastName">Last Name</label> 
+           <br /> 
+           <input placeholder="Your Last Name" type="text" /> 
+           <br /> 
+           <label for=""> country</label> 
+           <br /> 
+           <select name="" id=""> 
+             <option value="">afghanistan</option> 
+             <option value="">iraq</option> 
+             <option value="">benin</option> 
+           </select> 
+           <br /> 
+           <label for="">subject</label> 
+           <br /> 
+           <textarea 
+             placeholder="write something" 
+             name="" 
+             id="" 
+             cols="30" 
+             rows="10" 
+           ></textarea> 
+           <br /> 
+           <input type="submit" value="submit" /> 
+         </div> 
+       </form> 
+     </div> 
+   </body> 
+ </html> 
