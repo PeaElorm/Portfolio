@@ -8,8 +8,8 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-height: 8vh;
-  background-color: olivedrab;
+  min-height: 12vh;
+  background-color: rgb(113, 99, 238);
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .logo {
@@ -30,7 +30,7 @@ nav {
 }
 
 .nav-links a {
-  color: black;
+  color: rgb(243, 241, 241);
   text-decoration: none;
   letter-spacing: 1px;
   font-weight: bold;
@@ -78,7 +78,7 @@ nav {
     right: 0px;
     height: 92vh;
     top: 8vh;
-    background-color: olivedrab;       
+    background-color: rgb(109, 109, 241);       
     display: flex;
     flex-direction: column;
     align-items: center;
