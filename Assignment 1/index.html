@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="./fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="./fontawesome/css/fontawesome.min.css">
+    <title>Document</title>
+
+    <style>
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* .nav-{
+     display: flex;
+     list-style-type:none;
+     justify-content: space-between;
+     width: 20%;
+     
+    } */
+
+.card{
+    background-color: rgb(250, 252, 252);
+    padding: 20px;
+    text-align: center;
+}
+h3{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+    </style>
+</head>
+<body>
+
+  <form method="get" action="../index.html">
+    <button type="submit">HOME</button>
+    </form>
+    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #228fdd;">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars">
+            
+        </i></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Link <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+
+                
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+     <div class="container">
+      <div class="w-75 h-5">
+        <div class="carousel slide" id="carouselExample" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-slide-to="0" class="active"></li
+                <!-- <li data-slide-to="1"></li>
+                <li data-slide-to="2"></li>
+                <li data-slide-to="3"></li>
+                <li data-slide-to="4"></li>
+                <li data-slide-to="5"></li>
+                <li data-slide-to="6"></li>
+            </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./images/eiliv-sonas-aceron-ZQjLze3wpec-unsplash.jpg"
+                alt=""
+                class="d-block w-100 h-100"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./images/guillaume-de-germain-hcELcyJ2RNQ-unsplash.jpg"
+                alt=""
+                class="d-block w-100 h-100"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./images/helena-lopes-yALPKaS0trU-unsplash.jpg"
+                alt=""
+                class="d-block w-100 h-100"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./images/logan-weaver-m6hSKyiuJuU-unsplash.jpg"
+                alt=""
+                class="d-block w-100 h-100"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./images/long-truong-Ku36j7jR4GM-unsplash.jpg"
+                alt=""
+                class="d-block w-100 h-100"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./images/miguel-teirlinck-LPF7FyTMuxk-unsplash.jpg"
+                alt=""
+                class="d-block w-100 h-100"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./images/riley-pxAdFrYYYuE-unsplash.jpg"
+                alt=""
+                class="d-block w-100 h-100"
+              />
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="./images/rizky-subagja-PvqRabikh40-unsplash.jpg"
+                alt=""
+                class="d-block w-100 h-100"
+              />
+            </div>
+
+            <div class="carousel-item">
+              <img
+                src="./images/tuyen-vo-B2wLLcFi4Z0-unsplash.jpg"
+                alt=""
+                class="d-block w-100 h-100"
+              />
+            </div>
+            
+          </div>
+          <a href="#carouselExample"
+          class="carousel-control-prev"
+          data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+
+                  <a href="#carouselExample"
+          class="carousel-control-next"
+          data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+        </div>
+      </div>
+    </div> 
+
+<h3> My Image Slidder</h3>
+
+    <div class="card-columns">
+        <div class="card" style="background-color: rgb(70, 172, 185);">
+            <img class="card-img-top" src="./images/anastasiya-pavlova-IcLqFMC3h08-unsplash.jpg" alt="">
+            <div class="card-body">
+                <h4 class="card-title">Ana</h4>
+                <p class="card-text"> Hi! <br>
+                i am Ana. <br> 
+            I love boots                   
+         </p>
+         <a class="btn btn-primary" href="#">let's Explore</a>
+            </div>
+        </div>
+        <div class="card" style="background-color: orange;">
+            <img class="card-img-top" src="./images/anastasiya-pavlova-SW9sp2asIX8-unsplash.jpg" alt="">
+            <div class="card-body">
+                <h4 class="card-title">Ana</h4>
+                <p class="card-text">At the beach <br>
+                watching the waves come and go <br>
+            So beautiful! <br>
+            Great! i need to get some snails too.
+        </p>
+        <a class="btn btn-primary" href="#">let's Explore</a>
+            </div>
+        </div>
+         <div class="card" style="background-color: blue;">
+            <img class="card-img-top" src="./images/eiliv-sonas-aceron-ZQjLze3wpec-unsplash.jpg" alt="">
+            <div class="card-body">
+                <h4 class="card-title">Ana</h4>
+                <p class="card-text"> And oh I love food too. <br>
+                Chicken with plenty of vegetables are my favourite</p>
+                <a class="btn btn-primary" href="#">let's Explore</a>
+            </div>
+        </div>
+    </div>
+
+        <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>

@@ -22,5 +22,5 @@ close.addEventListener("click", () => modal.classList.remove
 
     //to close the form by cliking anywhere outside the form
 window.addEventListener("click", (e) =>
-  e.target == modal ? modal.classList.remove("show - modal") : false
+  e.target == modal ? modal.classList.remove("show-modal") : false
 );
